@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>인스타 트렌드 대시보드</title>
+<style>
+  :root {
+    --bg1: #12183a; --bg2: #4c286e; --panel: #202246; --panel2: #2a2c56;
+    --gold: #ffd166; --white: #f5f5fa; --grey: #c8c8d7; --dim: #a0a5c3;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    background: linear-gradient(180deg, var(--bg1), var(--bg2)) fixed;
+    color: var(--white); min-height: 100vh; padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  h1 { text-align: center; font-size: 1.7rem; margin: 18px 0 4px; }
+  h1 .gold { color: var(--gold); }
+  .sub { text-align: center; color: var(--dim); font-size: .95rem; margin-bottom: 28px; }
+  .stats { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .stat {
+    background: var(--panel); border-radius: 14px; padding: 14px 22px; text-align: center; min-width: 130px;
+  }
+  .stat .num { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+  .stat .label { font-size: .85rem; color: var(--grey); margin-top: 2px; }
+  h2 { font-size: 1.15rem; margin: 34px 0 14px; border-left: 4px solid var(--gold); padding-left: 10px; }
+  .latest { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
+  .latest img { width: 320px; max-width: 100%; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+  .latest .info { flex: 1; min-width: 260px; }
+  .rowcard {
+    background: var(--panel); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .rank { font-size: 1.3rem; font-weight: 700; color: var(--gold); width: 28px; text-align: center; }
+  .rowcard a { color: var(--white); text-decoration: none; font-weight: 700; }
+  .rowcard a:hover { color: var(--gold); }
+  .meta { color: var(--grey); font-size: .85rem; margin-top: 2px; }
+  .tags { color: var(--dim); font-size: .9rem; margin: 8px 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .day {
+    background: var(--panel); border-radius: 14px; overflow: hidden; cursor: pointer;
+    transition: transform .15s; text-decoration: none; color: var(--white); display: block;
+  }
+  .day:hover { transform: translateY(-3px); }
+  .day img { width: 100%; display: block; }
+  .day .body { padding: 10px 12px 14px; }
+  .day .date { font-weight: 700; color: var(--gold); font-size: .95rem; }
+  .day .names { color: var(--grey); font-size: .82rem; margin-top: 4px; line-height: 1.5; }
+  table { width: 100%; border-collapse: collapse; background: var(--panel); border-radius: 14px; overflow: hidden; }
+  th, td { padding: 10px 12px; text-align: left; font-size: .88rem; }
+  th { background: var(--panel2); color: var(--gold); font-weight: 700; }
+  tr:not(:last-child) td { border-bottom: 1px solid rgba(255,255,255,.06); }
+  td a { color: var(--white); text-decoration: none; font-weight: 700; }
+  td a:hover { color: var(--gold); }
+  .empty { text-align: center; color: var(--dim); padding: 40px 0; }
+  .tablebox { overflow-x: auto; }
+  .contents { display: flex; gap: 8px; margin: 8px 0 2px; flex-wrap: wrap; }
+  .contents a { display: block; position: relative; }
+  .contents img { width: 92px; height: 92px; object-fit: cover; border-radius: 10px; display: block; }
+  .contents .cnt { position: absolute; left: 0; right: 0; bottom: 0; font-size: .68rem; text-align: center;
+    background: rgba(10,10,30,.72); color: var(--grey); border-radius: 0 0 10px 10px; padding: 2px 0; }
+  .embedgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+  .embedcol h3 { font-size: 1rem; margin-bottom: 8px; }
+  .embedcol h3 a { color: var(--gold); text-decoration: none; }
+  .embedcol .sub2 { color: var(--dim); font-size: .8rem; margin-bottom: 8px; }
+  .instagram-media { background: #fff; border-radius: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📈 인스타 트렌드 <span class="gold">대시보드</span></h1>
+  <div class="sub">매일 아침 9시, 서버가 자동으로 뜨는 인플루언서를 찾아 분석하고 게시합니다</div>
+
+  <div class="stats" id="stats"></div>
+
+  <h2>오늘의 분석</h2>
+  <div class="latest" id="latest"><div class="empty">아직 데이터가 없습니다.</div></div>
+
+  <h2>인플루언서 게시물 바로보기</h2>
+  <div id="embeds"><div class="empty">게시물 데이터가 준비되면 여기에 표시됩니다.</div></div>
+
+  <h2>지난 기록</h2>
+  <div class="grid" id="history"></div>
+
+  <h2>지금까지 소개한 인플루언서</h2>
+  <div class="tablebox">
+  <table id="tbl">
+    <thead><tr><th>날짜</th><th>계정</th><th>팔로워</th><th>게시물당 반응</th><th>반응률</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+</div>
+
+<script>
+function fmt(n) {
+  if (n >= 100000000) return (n / 100000000).toFixed(1) + "억";
+  if (n >= 10000) return (n / 10000).toFixed(1) + "만";
+  if (n >= 1000) return (n / 1000).toFixed(1) + "천";
+  return String(n);
+}
+fetch("data/index.json?t=" + Date.now())
+  .then(r => r.json())
+  .then(idx => {
+    const days = (idx.days || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (!days.length) return;
+
+    const everyone = days.flatMap(d => d.top3.map(p => ({ ...p, date: d.date })));
+    document.getElementById("stats").innerHTML = `
+      <div class="stat"><div class="num">${days.length}</div><div class="label">분석한 날</div></div>
+      <div class="stat"><div class="num">${everyone.length}</div><div class="label">소개한 계정</div></div>
+      <div class="stat"><div class="num">${days[0].date.slice(5).replace("-", "/")}</div><div class="label">최근 분석일</div></div>`;
+
+    const L = days[0];
+    const renderLatest = (detail) => {
+      const byName = {};
+      (detail && detail.top3 || []).forEach(p => byName[p.username] = p);
+      document.getElementById("latest").innerHTML = `
+        <a href="${L.card}" target="_blank"><img src="${L.card}" alt="오늘의 카드"></a>
+        <div class="info">
+          <div class="tags">📅 ${L.date} · 해시태그: ${L.tags.map(t => "#" + t).join(" ")}</div>
+          ${L.top3.map((p, i) => {
+            const posts = (byName[p.username] || {}).top_posts || [];
+            const thumbs = posts.map(t => `
+              <a href="${t.url}" target="_blank" title="${(t.caption || "").replace(/"/g, "")}">
+                ${t.thumb ? `<img src="${t.thumb}" alt="콘텐츠">` : ""}
+                <span class="cnt">❤${fmt(t.likes)} 💬${fmt(t.comments)}</span>
+              </a>`).join("");
+            return `
+            <div class="rowcard">
+              <div class="rank">${i + 1}</div>
+              <div style="flex:1">
+                <a href="https://www.instagram.com/${p.username}/" target="_blank">@${p.username}</a>
+                <div class="meta">팔로워 ${fmt(p.followers)} · 반응 ${fmt(p.avg_engagement)} · 반응률 ${p.engagement_rate}%</div>
+                ${thumbs ? `<div class="contents">${thumbs}</div>` : ""}
+              </div>
+            </div>`;
+          }).join("")}
+        </div>`;
+    };
+    const renderEmbeds = (detail) => {
+      const withPosts = (detail && detail.top3 || []).filter(p => (p.top_posts || []).length);
+      if (!withPosts.length) return;
+      document.getElementById("embeds").innerHTML = `<div class="embedgrid">` + withPosts.map(p => {
+        const main = p.top_posts[0];
+        const rest = p.top_posts.slice(1).map(t => `
+          <a href="${t.url}" target="_blank" title="${(t.caption || "").replace(/"/g, "")}">
+            ${t.thumb ? `<img src="${t.thumb}" alt="게시물">` : ""}
+            <span class="cnt">❤${fmt(t.likes)} 💬${fmt(t.comments)}</span>
+          </a>`).join("");
+        return `
+        <div class="embedcol">
+          <h3><a href="https://www.instagram.com/${p.username}/" target="_blank">@${p.username}</a></h3>
+          <div class="sub2">대표 게시물 (❤${fmt(main.likes)} 💬${fmt(main.comments)})</div>
+          <blockquote class="instagram-media" data-instgrm-permalink="${main.url}" data-instgrm-version="14" style="width:100%"></blockquote>
+          ${rest ? `<div class="contents">${rest}</div>` : ""}
+        </div>`;
+      }).join("") + `</div>`;
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+      } else {
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.instagram.com/embed.js";
+        document.body.appendChild(s);
+      }
+    };
+    renderLatest(null);
+    fetch(`data/${L.date}.json?t=` + Date.now())
+      .then(r => r.json())
+      .then(detail => { renderLatest(detail); renderEmbeds(detail); })
+      .catch(() => {});
+
+    document.getElementById("history").innerHTML = days.slice(1).map(d => `
+      <a class="day" href="${d.card}" target="_blank">
+        <img src="${d.card}" loading="lazy" alt="${d.date} 카드">
+        <div class="body">
+          <div class="date">${d.date}</div>
+          <div class="names">${d.top3.map(p => "@" + p.username).join("<br>")}</div>
+        </div>
+      </a>`).join("") || '<div class="empty">내일부터 기록이 쌓입니다.</div>';
+
+    document.querySelector("#tbl tbody").innerHTML = everyone.map(p => `
+      <tr>
+        <td>${p.date}</td>
+        <td><a href="https://www.instagram.com/${p.username}/" target="_blank">@${p.username}</a></td>
+        <td>${fmt(p.followers)}</td>
+        <td>${fmt(p.avg_engagement)}</td>
+        <td>${p.engagement_rate}%</td>
+      </tr>`).join("");
+  })
+  .catch(() => {
+    document.getElementById("latest").innerHTML = '<div class="empty">데이터를 불러오지 못했습니다.</div>';
+  });
+</script>
+</body>
+</html>

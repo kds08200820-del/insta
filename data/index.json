@@ -1,0 +1,32 @@
+{
+  "days": [
+    {
+      "date": "2026-07-23",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "emperor_kyung",
+          "followers": 3717,
+          "avg_engagement": 398,
+          "engagement_rate": 10.71
+        },
+        {
+          "username": "mayo_yaho",
+          "followers": 2156,
+          "avg_engagement": 105,
+          "engagement_rate": 4.87
+        },
+        {
+          "username": "__jookyung",
+          "followers": 4022,
+          "avg_engagement": 126,
+          "engagement_rate": 3.13
+        }
+      ],
+      "card": "cards/2026-07-23.jpg"
+    }
+  ]
+}
