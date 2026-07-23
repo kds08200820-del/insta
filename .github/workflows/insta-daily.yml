@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 0 * * *'   # 매일 한국시간 오전 9시
   workflow_dispatch:        # 수동 실행 단추
+    inputs:
+      preview:
+        description: '미리보기 (인스타 게시·저장 없이 테스트만)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,4 +39,5 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PREVIEW: ${{ inputs.preview && '1' || '' }}
         run: python automation.py
