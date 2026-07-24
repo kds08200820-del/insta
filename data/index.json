@@ -27,6 +27,34 @@
         }
       ],
       "card": "cards/2026-07-23.jpg"
+    },
+    {
+      "date": "2026-07-24",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "jjimn_i",
+          "followers": 3132,
+          "avg_engagement": 396,
+          "engagement_rate": 12.65
+        },
+        {
+          "username": "88moto_daejeon_sejong",
+          "followers": 1928,
+          "avg_engagement": 46,
+          "engagement_rate": 2.41
+        },
+        {
+          "username": "origin___store",
+          "followers": 1476,
+          "avg_engagement": 18,
+          "engagement_rate": 1.19
+        }
+      ],
+      "card": "cards/2026-07-24.jpg"
     }
   ]
 }
