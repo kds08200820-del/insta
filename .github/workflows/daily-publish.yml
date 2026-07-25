@@ -1,0 +1,61 @@
+name: 통합 발행 (매일)
+
+# 요일별 콘텐츠는 calendar.json 이 결정한다.
+#   월·수·금 개인 수급 레이더 / 화·목·일 인스타 트렌드 TOP3 / 토 주간 마켓 리뷰(10장)
+# 인스타 게시 창구는 이 워크플로 하나뿐이라 중복 게시가 구조적으로 불가능하다.
+on:
+  schedule:
+    - cron: '0 0 * * *'          # 매일 00:00 UTC = 09:00 KST
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '강제 슬롯 (비우면 요일대로). supply_radar | trend_top3 | market_review'
+        required: false
+        default: ''
+      dry_run:
+        description: 'true면 생성만 하고 게시하지 않음'
+        type: boolean
+        default: false
+      force:
+        description: 'true면 오늘 이미 발행했어도 재발행'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: insta-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 한글 글꼴 설치
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum fonts-noto-cjk
+
+      - name: 의존성 설치
+        run: |
+          pip install --quiet apify-client pillow requests playwright
+          python -m playwright install --with-deps chromium
+
+      - name: 발행
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          QUANT_PASSWORD: ${{ secrets.QUANT_PASSWORD }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          ARGS=""
+          [ -n "${{ inputs.slot }}" ] && ARGS="$ARGS --slot ${{ inputs.slot }}"
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          [ "${{ inputs.force }}" = "true" ] && ARGS="$ARGS --force"
+          python publisher.py $ARGS

@@ -1,0 +1,34 @@
+{
+  "_설명": "요일별 인스타 발행 계획. 이 파일 하나만 고치면 발행 내용이 바뀝니다.",
+  "_slot": "trend_top3 = 인스타 급성장 계정 TOP3 / supply_radar = 개인 수급 레이더 / market_review = 주간 마켓 리뷰 10장 / off = 발행 안 함",
+  "timezone": "Asia/Seoul",
+  "publish_hour_kst": 9,
+  "quant_base": "https://quant-dashboard-8ddy.onrender.com",
+  "week": {
+    "mon": "supply_radar",
+    "tue": "trend_top3",
+    "wed": "supply_radar",
+    "thu": "trend_top3",
+    "fri": "supply_radar",
+    "sat": "market_review",
+    "sun": "trend_top3"
+  },
+  "slots": {
+    "trend_top3": {
+      "label": "인스타 급성장 계정 TOP3",
+      "generator": "automation.py",
+      "note": "Apify로 해시태그 인기 게시물 수집 → 계정 분석 → TOP3 카드 1장"
+    },
+    "supply_radar": {
+      "label": "개인 수급 레이더",
+      "generator": "gen_radar.py",
+      "note": "quant-dashboard /api/radar 의 개인 순매수 추정 랭킹 → 카드 1장",
+      "top_n": 7
+    },
+    "market_review": {
+      "label": "주간 마켓 리뷰 (10장 캐러셀)",
+      "generator": "quant-dashboard",
+      "note": "quant-dashboard /api/cards 의 최신 미게시 주차를 캐러셀로 게시. 이미지는 Render 공개 URL 사용"
+    }
+  }
+}

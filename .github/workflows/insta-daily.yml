@@ -1,8 +1,9 @@
-name: 인스타 자동화 (매일)
+name: [수동 전용] 인스타 트렌드 TOP3 단독 실행
 
+# ⚠ 스케줄 제거됨 — 자동 발행은 daily-publish.yml(통합 발행기)이 담당한다.
+#   이 워크플로를 그대로 두면 트렌드 TOP3 가 하루 두 번 올라간다.
+#   여기서는 수동 실행(단독 테스트)만 가능하다.
 on:
-  schedule:
-    - cron: '0 0 * * *'   # 매일 한국시간 오전 9시
   workflow_dispatch:        # 수동 실행 단추
     inputs:
       preview:
