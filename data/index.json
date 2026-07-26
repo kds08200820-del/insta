@@ -55,6 +55,34 @@
         }
       ],
       "card": "cards/2026-07-24.jpg"
+    },
+    {
+      "date": "2026-07-26",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "pulse_code_official",
+          "followers": 2921,
+          "avg_engagement": 205,
+          "engagement_rate": 7.01
+        },
+        {
+          "username": "minyoung.days",
+          "followers": 2866,
+          "avg_engagement": 154,
+          "engagement_rate": 5.37
+        },
+        {
+          "username": "diveinto_yo_u",
+          "followers": 15804,
+          "avg_engagement": 639,
+          "engagement_rate": 4.04
+        }
+      ],
+      "card": "cards/2026-07-26.jpg"
     }
   ]
 }
