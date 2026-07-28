@@ -83,6 +83,28 @@
         }
       ],
       "card": "cards/2026-07-26.jpg"
+    },
+    {
+      "date": "2026-07-28",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "chaxeonxee",
+          "followers": 5024,
+          "avg_engagement": 296,
+          "engagement_rate": 5.89
+        },
+        {
+          "username": "yonggal_ee",
+          "followers": 5454,
+          "avg_engagement": 137,
+          "engagement_rate": 2.52
+        }
+      ],
+      "card": "cards/2026-07-28.jpg"
     }
   ]
 }
