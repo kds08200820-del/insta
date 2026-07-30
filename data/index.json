@@ -105,6 +105,34 @@
         }
       ],
       "card": "cards/2026-07-28.jpg"
+    },
+    {
+      "date": "2026-07-30",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "withus_trainee",
+          "followers": 18570,
+          "avg_engagement": 1100,
+          "engagement_rate": 5.92
+        },
+        {
+          "username": "do.hev_yeonji",
+          "followers": 5476,
+          "avg_engagement": 268,
+          "engagement_rate": 4.9
+        },
+        {
+          "username": "newyork_unni",
+          "followers": 30635,
+          "avg_engagement": 238,
+          "engagement_rate": 0.78
+        }
+      ],
+      "card": "cards/2026-07-30.jpg"
     }
   ]
 }
