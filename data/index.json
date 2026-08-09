@@ -161,6 +161,34 @@
         }
       ],
       "card": "cards/2026-08-04.jpg"
+    },
+    {
+      "date": "2026-08-09",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "han.ip.haeng.bok",
+          "followers": 3714,
+          "avg_engagement": 85,
+          "engagement_rate": 2.28
+        },
+        {
+          "username": "hahyesug80",
+          "followers": 1417,
+          "avg_engagement": 14,
+          "engagement_rate": 1.01
+        },
+        {
+          "username": "_ha0mom_",
+          "followers": 2396,
+          "avg_engagement": 17,
+          "engagement_rate": 0.72
+        }
+      ],
+      "card": "cards/2026-08-09.jpg"
     }
   ]
 }
