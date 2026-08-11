@@ -189,6 +189,34 @@
         }
       ],
       "card": "cards/2026-08-09.jpg"
+    },
+    {
+      "date": "2026-08-11",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "kwokwokwon.lucky",
+          "followers": 69111,
+          "avg_engagement": 16832,
+          "engagement_rate": 24.36
+        },
+        {
+          "username": "rkdbsss",
+          "followers": 24126,
+          "avg_engagement": 1940,
+          "engagement_rate": 8.04
+        },
+        {
+          "username": "tambang.kr",
+          "followers": 12152,
+          "avg_engagement": 37,
+          "engagement_rate": 0.3
+        }
+      ],
+      "card": "cards/2026-08-11.jpg"
     }
   ]
 }
