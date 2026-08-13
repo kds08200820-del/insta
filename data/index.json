@@ -217,6 +217,28 @@
         }
       ],
       "card": "cards/2026-08-11.jpg"
+    },
+    {
+      "date": "2026-08-13",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "wonju_eddy",
+          "followers": 4956,
+          "avg_engagement": 250,
+          "engagement_rate": 5.05
+        },
+        {
+          "username": "jeju_playme",
+          "followers": 48964,
+          "avg_engagement": 1178,
+          "engagement_rate": 2.41
+        }
+      ],
+      "card": "cards/2026-08-13.jpg"
     }
   ]
 }
