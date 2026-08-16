@@ -62,6 +62,13 @@
       "slot": "trend_top3",
       "status": "published",
       "at": "2026-08-13T10:19:56.862053+09:00"
+    },
+    {
+      "date": "2026-08-16",
+      "weekday": "sun",
+      "slot": "trend_top3",
+      "status": "published",
+      "at": "2026-08-16T09:54:05.164325+09:00"
     }
   ]
 }
