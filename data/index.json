@@ -239,6 +239,34 @@
         }
       ],
       "card": "cards/2026-08-13.jpg"
+    },
+    {
+      "date": "2026-08-16",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "chung_a0622",
+          "followers": 1508,
+          "avg_engagement": 169,
+          "engagement_rate": 11.21
+        },
+        {
+          "username": "jiyoung.moreon",
+          "followers": 4644,
+          "avg_engagement": 91,
+          "engagement_rate": 1.96
+        },
+        {
+          "username": "inhyeok1220",
+          "followers": 1378,
+          "avg_engagement": 24,
+          "engagement_rate": 1.72
+        }
+      ],
+      "card": "cards/2026-08-16.jpg"
     }
   ]
 }
