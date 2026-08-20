@@ -267,6 +267,34 @@
         }
       ],
       "card": "cards/2026-08-16.jpg"
+    },
+    {
+      "date": "2026-08-20",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "dabin___96",
+          "followers": 7494,
+          "avg_engagement": 310,
+          "engagement_rate": 4.14
+        },
+        {
+          "username": "yoon.nail__",
+          "followers": 138650,
+          "avg_engagement": 215,
+          "engagement_rate": 0.15
+        },
+        {
+          "username": "attrangs_official",
+          "followers": 173347,
+          "avg_engagement": 179,
+          "engagement_rate": 0.1
+        }
+      ],
+      "card": "cards/2026-08-20.jpg"
     }
   ]
 }
