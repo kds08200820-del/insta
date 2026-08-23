@@ -295,6 +295,34 @@
         }
       ],
       "card": "cards/2026-08-20.jpg"
+    },
+    {
+      "date": "2026-08-23",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "d._.abal",
+          "followers": 13700,
+          "avg_engagement": 33564,
+          "engagement_rate": 244.99
+        },
+        {
+          "username": "bean.ote",
+          "followers": 3425,
+          "avg_engagement": 563,
+          "engagement_rate": 16.44
+        },
+        {
+          "username": "8ummerlog",
+          "followers": 1226,
+          "avg_engagement": 42,
+          "engagement_rate": 3.43
+        }
+      ],
+      "card": "cards/2026-08-23.jpg"
     }
   ]
 }
