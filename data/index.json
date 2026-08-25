@@ -323,6 +323,34 @@
         }
       ],
       "card": "cards/2026-08-23.jpg"
+    },
+    {
+      "date": "2026-08-25",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "seuriseula",
+          "followers": 13125,
+          "avg_engagement": 1075,
+          "engagement_rate": 8.19
+        },
+        {
+          "username": "og79th_",
+          "followers": 5641,
+          "avg_engagement": 230,
+          "engagement_rate": 4.07
+        },
+        {
+          "username": "jukyeop_dawon",
+          "followers": 3073,
+          "avg_engagement": 30,
+          "engagement_rate": 0.98
+        }
+      ],
+      "card": "cards/2026-08-25.jpg"
     }
   ]
 }
