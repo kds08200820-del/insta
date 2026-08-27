@@ -351,6 +351,34 @@
         }
       ],
       "card": "cards/2026-08-25.jpg"
+    },
+    {
+      "date": "2026-08-27",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "ai.m.art",
+          "followers": 152449,
+          "avg_engagement": 53117,
+          "engagement_rate": 34.84
+        },
+        {
+          "username": "seoxxzo",
+          "followers": 7835,
+          "avg_engagement": 566,
+          "engagement_rate": 7.22
+        },
+        {
+          "username": "0l.2l2l",
+          "followers": 127782,
+          "avg_engagement": 1270,
+          "engagement_rate": 0.99
+        }
+      ],
+      "card": "cards/2026-08-27.jpg"
     }
   ]
 }
