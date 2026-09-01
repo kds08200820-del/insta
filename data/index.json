@@ -379,6 +379,28 @@
         }
       ],
       "card": "cards/2026-08-27.jpg"
+    },
+    {
+      "date": "2026-09-01",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "iamjay0112",
+          "followers": 12199,
+          "avg_engagement": 222,
+          "engagement_rate": 1.82
+        },
+        {
+          "username": "169.9kg",
+          "followers": 2846,
+          "avg_engagement": 26,
+          "engagement_rate": 0.9
+        }
+      ],
+      "card": "cards/2026-09-01.jpg"
     }
   ]
 }
