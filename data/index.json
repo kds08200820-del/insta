@@ -401,6 +401,34 @@
         }
       ],
       "card": "cards/2026-09-01.jpg"
+    },
+    {
+      "date": "2026-09-06",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "d0_m0m",
+          "followers": 2660,
+          "avg_engagement": 183,
+          "engagement_rate": 6.87
+        },
+        {
+          "username": "god.k.m__daily",
+          "followers": 5087,
+          "avg_engagement": 193,
+          "engagement_rate": 3.8
+        },
+        {
+          "username": "sw_maknettal",
+          "followers": 1092,
+          "avg_engagement": 23,
+          "engagement_rate": 2.11
+        }
+      ],
+      "card": "cards/2026-09-06.jpg"
     }
   ]
 }
