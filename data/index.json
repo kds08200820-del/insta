@@ -429,6 +429,34 @@
         }
       ],
       "card": "cards/2026-09-06.jpg"
+    },
+    {
+      "date": "2026-09-08",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "cy_x10",
+          "followers": 2486,
+          "avg_engagement": 397,
+          "engagement_rate": 15.99
+        },
+        {
+          "username": "__hae_ri",
+          "followers": 1987,
+          "avg_engagement": 147,
+          "engagement_rate": 7.39
+        },
+        {
+          "username": "yoon_seong_a",
+          "followers": 11942,
+          "avg_engagement": 473,
+          "engagement_rate": 3.96
+        }
+      ],
+      "card": "cards/2026-09-08.jpg"
     }
   ]
 }
