@@ -457,6 +457,28 @@
         }
       ],
       "card": "cards/2026-09-08.jpg"
+    },
+    {
+      "date": "2026-09-10",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "ponyoyum",
+          "followers": 9765,
+          "avg_engagement": 490,
+          "engagement_rate": 5.02
+        },
+        {
+          "username": "dalcom._.day",
+          "followers": 1120,
+          "avg_engagement": 12,
+          "engagement_rate": 1.03
+        }
+      ],
+      "card": "cards/2026-09-10.jpg"
     }
   ]
 }
