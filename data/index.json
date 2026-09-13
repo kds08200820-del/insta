@@ -479,6 +479,34 @@
         }
       ],
       "card": "cards/2026-09-10.jpg"
+    },
+    {
+      "date": "2026-09-13",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "kkkkqqqq2019",
+          "followers": 1237,
+          "avg_engagement": 58,
+          "engagement_rate": 4.73
+        },
+        {
+          "username": "j__hye_m",
+          "followers": 3080,
+          "avg_engagement": 127,
+          "engagement_rate": 4.13
+        },
+        {
+          "username": "yuseng_____",
+          "followers": 1006,
+          "avg_engagement": 15,
+          "engagement_rate": 1.49
+        }
+      ],
+      "card": "cards/2026-09-13.jpg"
     }
   ]
 }
