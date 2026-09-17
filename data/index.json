@@ -507,6 +507,34 @@
         }
       ],
       "card": "cards/2026-09-13.jpg"
+    },
+    {
+      "date": "2026-09-17",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "y_hak_y",
+          "followers": 6465,
+          "avg_engagement": 545,
+          "engagement_rate": 8.43
+        },
+        {
+          "username": "knit_comet",
+          "followers": 3956,
+          "avg_engagement": 165,
+          "engagement_rate": 4.18
+        },
+        {
+          "username": "zi.ni.ya",
+          "followers": 1459,
+          "avg_engagement": 58,
+          "engagement_rate": 4.01
+        }
+      ],
+      "card": "cards/2026-09-17.jpg"
     }
   ]
 }
