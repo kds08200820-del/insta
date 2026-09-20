@@ -535,6 +535,34 @@
         }
       ],
       "card": "cards/2026-09-17.jpg"
+    },
+    {
+      "date": "2026-09-20",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "soso.sweet0919",
+          "followers": 2622,
+          "avg_engagement": 137,
+          "engagement_rate": 5.23
+        },
+        {
+          "username": "vivasalon_toyshop",
+          "followers": 5382,
+          "avg_engagement": 257,
+          "engagement_rate": 4.77
+        },
+        {
+          "username": "419attirance_coffee",
+          "followers": 1756,
+          "avg_engagement": 41,
+          "engagement_rate": 2.33
+        }
+      ],
+      "card": "cards/2026-09-20.jpg"
     }
   ]
 }
