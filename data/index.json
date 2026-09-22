@@ -563,6 +563,28 @@
         }
       ],
       "card": "cards/2026-09-20.jpg"
+    },
+    {
+      "date": "2026-09-22",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "dal_dal_oh",
+          "followers": 15076,
+          "avg_engagement": 231,
+          "engagement_rate": 1.53
+        },
+        {
+          "username": "smile_life_s2",
+          "followers": 83890,
+          "avg_engagement": 100,
+          "engagement_rate": 0.12
+        }
+      ],
+      "card": "cards/2026-09-22.jpg"
     }
   ]
 }
