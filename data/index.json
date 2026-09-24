@@ -585,6 +585,34 @@
         }
       ],
       "card": "cards/2026-09-22.jpg"
+    },
+    {
+      "date": "2026-09-24",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "damxjo",
+          "followers": 2874,
+          "avg_engagement": 224,
+          "engagement_rate": 7.81
+        },
+        {
+          "username": "d__kimna",
+          "followers": 1481,
+          "avg_engagement": 98,
+          "engagement_rate": 6.63
+        },
+        {
+          "username": "min_sweet_",
+          "followers": 19333,
+          "avg_engagement": 556,
+          "engagement_rate": 2.88
+        }
+      ],
+      "card": "cards/2026-09-24.jpg"
     }
   ]
 }
