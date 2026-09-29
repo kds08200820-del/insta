@@ -613,6 +613,34 @@
         }
       ],
       "card": "cards/2026-09-24.jpg"
+    },
+    {
+      "date": "2026-09-29",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "hyeongdoj",
+          "followers": 9267,
+          "avg_engagement": 747,
+          "engagement_rate": 8.06
+        },
+        {
+          "username": "drop__han",
+          "followers": 10080,
+          "avg_engagement": 419,
+          "engagement_rate": 4.16
+        },
+        {
+          "username": "smile_nyang_s2",
+          "followers": 62941,
+          "avg_engagement": 2231,
+          "engagement_rate": 3.54
+        }
+      ],
+      "card": "cards/2026-09-29.jpg"
     }
   ]
 }
