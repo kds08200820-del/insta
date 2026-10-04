@@ -641,6 +641,34 @@
         }
       ],
       "card": "cards/2026-09-29.jpg"
+    },
+    {
+      "date": "2026-10-04",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "foodie._.salong",
+          "followers": 2036,
+          "avg_engagement": 148,
+          "engagement_rate": 7.27
+        },
+        {
+          "username": "tmdals__star",
+          "followers": 1014,
+          "avg_engagement": 37,
+          "engagement_rate": 3.64
+        },
+        {
+          "username": "dj2_foody",
+          "followers": 15395,
+          "avg_engagement": 61,
+          "engagement_rate": 0.4
+        }
+      ],
+      "card": "cards/2026-10-04.jpg"
     }
   ]
 }
