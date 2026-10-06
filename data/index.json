@@ -669,6 +669,28 @@
         }
       ],
       "card": "cards/2026-10-04.jpg"
+    },
+    {
+      "date": "2026-10-06",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "parisblablagirl",
+          "followers": 11548,
+          "avg_engagement": 6720,
+          "engagement_rate": 58.19
+        },
+        {
+          "username": "monayeny",
+          "followers": 1160,
+          "avg_engagement": 100,
+          "engagement_rate": 8.62
+        }
+      ],
+      "card": "cards/2026-10-06.jpg"
     }
   ]
 }
