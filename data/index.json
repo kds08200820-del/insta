@@ -691,6 +691,34 @@
         }
       ],
       "card": "cards/2026-10-06.jpg"
+    },
+    {
+      "date": "2026-10-08",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "na46461248",
+          "followers": 6458,
+          "avg_engagement": 252,
+          "engagement_rate": 3.91
+        },
+        {
+          "username": "jy_derek_yu",
+          "followers": 19266,
+          "avg_engagement": 633,
+          "engagement_rate": 3.29
+        },
+        {
+          "username": "sorasky0616",
+          "followers": 19046,
+          "avg_engagement": 402,
+          "engagement_rate": 2.11
+        }
+      ],
+      "card": "cards/2026-10-08.jpg"
     }
   ]
 }
