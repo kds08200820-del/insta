@@ -719,6 +719,34 @@
         }
       ],
       "card": "cards/2026-10-08.jpg"
+    },
+    {
+      "date": "2026-10-11",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "retrobunny1995",
+          "followers": 5672,
+          "avg_engagement": 269,
+          "engagement_rate": 4.74
+        },
+        {
+          "username": "binna3692",
+          "followers": 213407,
+          "avg_engagement": 6152,
+          "engagement_rate": 2.88
+        },
+        {
+          "username": "bi_byanna",
+          "followers": 80076,
+          "avg_engagement": 934,
+          "engagement_rate": 1.17
+        }
+      ],
+      "card": "cards/2026-10-11.jpg"
     }
   ]
 }
