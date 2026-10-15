@@ -747,6 +747,34 @@
         }
       ],
       "card": "cards/2026-10-11.jpg"
+    },
+    {
+      "date": "2026-10-15",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "kkingdub",
+          "followers": 17820,
+          "avg_engagement": 57023,
+          "engagement_rate": 320.0
+        },
+        {
+          "username": "muscle_kh",
+          "followers": 26941,
+          "avg_engagement": 536,
+          "engagement_rate": 1.99
+        },
+        {
+          "username": "seyounggg_",
+          "followers": 25811,
+          "avg_engagement": 247,
+          "engagement_rate": 0.96
+        }
+      ],
+      "card": "cards/2026-10-15.jpg"
     }
   ]
 }
