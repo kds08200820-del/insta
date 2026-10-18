@@ -775,6 +775,34 @@
         }
       ],
       "card": "cards/2026-10-15.jpg"
+    },
+    {
+      "date": "2026-10-18",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "eeeheat_",
+          "followers": 4398,
+          "avg_engagement": 283,
+          "engagement_rate": 6.44
+        },
+        {
+          "username": "estelle07__",
+          "followers": 1875,
+          "avg_engagement": 118,
+          "engagement_rate": 6.32
+        },
+        {
+          "username": "_good_zzang",
+          "followers": 1577,
+          "avg_engagement": 36,
+          "engagement_rate": 2.29
+        }
+      ],
+      "card": "cards/2026-10-18.jpg"
     }
   ]
 }
