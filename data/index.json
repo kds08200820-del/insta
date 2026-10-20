@@ -803,6 +803,28 @@
         }
       ],
       "card": "cards/2026-10-18.jpg"
+    },
+    {
+      "date": "2026-10-20",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "ssalchanggo_",
+          "followers": 3054,
+          "avg_engagement": 42,
+          "engagement_rate": 1.38
+        },
+        {
+          "username": "hwi_pro_",
+          "followers": 124888,
+          "avg_engagement": 824,
+          "engagement_rate": 0.66
+        }
+      ],
+      "card": "cards/2026-10-20.jpg"
     }
   ]
 }
