@@ -825,6 +825,28 @@
         }
       ],
       "card": "cards/2026-10-20.jpg"
+    },
+    {
+      "date": "2026-10-22",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "_jaeeuni",
+          "followers": 2967,
+          "avg_engagement": 75,
+          "engagement_rate": 2.52
+        },
+        {
+          "username": "doo.boo2",
+          "followers": 2929,
+          "avg_engagement": 0,
+          "engagement_rate": 0.0
+        }
+      ],
+      "card": "cards/2026-10-22.jpg"
     }
   ]
 }
