@@ -847,6 +847,34 @@
         }
       ],
       "card": "cards/2026-10-22.jpg"
+    },
+    {
+      "date": "2026-10-27",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "tmtnddk",
+          "followers": 1253,
+          "avg_engagement": 52,
+          "engagement_rate": 4.18
+        },
+        {
+          "username": "sseong_lim",
+          "followers": 38245,
+          "avg_engagement": 297,
+          "engagement_rate": 0.78
+        },
+        {
+          "username": "2xeul2",
+          "followers": 5468,
+          "avg_engagement": 0,
+          "engagement_rate": 0.0
+        }
+      ],
+      "card": "cards/2026-10-27.jpg"
     }
   ]
 }
