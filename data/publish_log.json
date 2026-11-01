@@ -293,6 +293,13 @@
       "slot": "trend_top3",
       "status": "published",
       "at": "2026-10-29T12:49:34.986763+09:00"
+    },
+    {
+      "date": "2026-11-01",
+      "weekday": "sun",
+      "slot": "trend_top3",
+      "status": "published",
+      "at": "2026-11-01T12:42:08.969404+09:00"
     }
   ]
 }
