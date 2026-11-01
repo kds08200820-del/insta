@@ -875,6 +875,22 @@
         }
       ],
       "card": "cards/2026-10-27.jpg"
+    },
+    {
+      "date": "2026-11-01",
+      "tags": [
+        "여행",
+        "맛집"
+      ],
+      "top3": [
+        {
+          "username": "h.m0927",
+          "followers": 17504,
+          "avg_engagement": 44403,
+          "engagement_rate": 253.67
+        }
+      ],
+      "card": "cards/2026-11-01.jpg"
     }
   ]
 }
