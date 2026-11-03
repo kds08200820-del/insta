@@ -891,6 +891,34 @@
         }
       ],
       "card": "cards/2026-11-01.jpg"
+    },
+    {
+      "date": "2026-11-03",
+      "tags": [
+        "카페",
+        "브이로그"
+      ],
+      "top3": [
+        {
+          "username": "my.chae.zip",
+          "followers": 4154,
+          "avg_engagement": 325,
+          "engagement_rate": 7.83
+        },
+        {
+          "username": "seommer.field",
+          "followers": 1639,
+          "avg_engagement": 85,
+          "engagement_rate": 5.18
+        },
+        {
+          "username": "nurse_jinsil",
+          "followers": 2846,
+          "avg_engagement": 86,
+          "engagement_rate": 3.02
+        }
+      ],
+      "card": "cards/2026-11-03.jpg"
     }
   ]
 }
