@@ -919,6 +919,34 @@
         }
       ],
       "card": "cards/2026-11-03.jpg"
+    },
+    {
+      "date": "2026-11-08",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "uni0que",
+          "followers": 4862,
+          "avg_engagement": 738,
+          "engagement_rate": 15.19
+        },
+        {
+          "username": "_san_wan",
+          "followers": 10062,
+          "avg_engagement": 216,
+          "engagement_rate": 2.14
+        },
+        {
+          "username": "soon__h22",
+          "followers": 1262,
+          "avg_engagement": 0,
+          "engagement_rate": 0.0
+        }
+      ],
+      "card": "cards/2026-11-08.jpg"
     }
   ]
 }
