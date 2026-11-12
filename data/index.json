@@ -947,6 +947,28 @@
         }
       ],
       "card": "cards/2026-11-08.jpg"
+    },
+    {
+      "date": "2026-11-12",
+      "tags": [
+        "일상",
+        "데일리"
+      ],
+      "top3": [
+        {
+          "username": "purplelee_world",
+          "followers": 5019,
+          "avg_engagement": 1041,
+          "engagement_rate": 20.73
+        },
+        {
+          "username": "hello_jjinii",
+          "followers": 1226,
+          "avg_engagement": 24,
+          "engagement_rate": 1.96
+        }
+      ],
+      "card": "cards/2026-11-12.jpg"
     }
   ]
 }
